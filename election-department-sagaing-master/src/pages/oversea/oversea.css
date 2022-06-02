@@ -1,0 +1,56 @@
+.oversea-nav{
+    background: rgba(0, 159, 187, 0.5);  
+    padding: 15px;
+    font-size: 18px;  
+}
+
+.oversea-div{
+    text-align: left;
+    font-size: 19px;
+    padding: 60px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.oversea-title{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.oversea-ul{
+    list-style: inside;
+    padding-top: 10px;
+}
+ol{
+    padding-top: 20px;
+}
+@media screen and (max-width: 400px){
+    .oversea-nav {
+       background: rgba(0, 159, 187, 0.5);  
+       padding: 15px;      
+    }
+    .oversea-div{
+        font-size: 12px;
+        padding: 30px;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+    .oversea-title{
+        font-size: 15px;
+    }
+}
+
+.oversea-img{
+    width: 900px;
+    height: 400px;
+}
+@media screen and (max-width: 400px){
+    .oversea-img{
+        width: 300px;
+        height: 200px;
+    }
+}
+.oversea-div-sub{
+    padding: 10px;
+    border: 3px solid;
+}

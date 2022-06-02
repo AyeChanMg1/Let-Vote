@@ -1,0 +1,42 @@
+.nav{
+   
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    background: rgba(0, 203, 253, 0.3);
+}
+.about h1{
+    background: linear-gradient(170deg, white, #72e8f8);
+    padding: 40px;
+}
+.p {
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    margin: 30px;
+    padding: 25px 30px 30px 30px
+}
+hr{
+    width: 230px;
+}
+
+@media screen and (max-width: 400px){
+    .about .p{
+        font-size: 12px;
+        line-height: normal;
+        margin: 5px;
+        padding-top: 50px;
+    }
+    .about h1{
+        padding: 10px;
+    }
+
+    .nav-a,span{
+        padding-top: 5px;
+        font-size: 15px;
+    }
+
+}
+
+

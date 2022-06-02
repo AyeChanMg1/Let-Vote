@@ -1,0 +1,43 @@
+.pollcard-nav{
+    background: rgba(0, 159, 187, 0.5);  
+    padding: 15px;
+    font-size: 18px;  
+}
+
+.pollcard-div{
+    /* text-align: left; */
+    font-size: 15px;
+    padding: 50px;
+    letter-spacing: 1px;
+    
+    
+}
+
+.pollcard-title{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.pollcard-ul{
+    list-style: inside;
+    padding-top: 10px;
+}
+.pollcard-img{
+    height: 200px;
+    width: 300px;
+}
+@media screen and (max-width: 400px){
+    .poolcard-nav {
+       background: rgba(0, 159, 187, 0.5);  
+       padding: 15px;      
+    }
+    .pollcard-div{
+        font-size: 12px;
+        padding: 30px;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+    .pollcard-title{
+        font-size: 20px;
+    }
+}

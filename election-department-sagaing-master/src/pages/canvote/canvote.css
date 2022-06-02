@@ -1,0 +1,39 @@
+.canvote-nav{
+    background: rgba(0, 159, 187, 0.5);  
+    padding: 15px;
+    font-size: 18px;  
+}
+
+.can-vote-div{
+    text-align: left;
+    font-size: 19px;
+    padding: 30px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.can-vote-title{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.can-vote-ul{
+    list-style: inside;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 400px){
+    .canvote-nav {
+       background: rgba(0, 159, 187, 0.5);  
+       padding: 15px;      
+    }
+    .can-vote-div{
+        font-size: 12px;
+        padding: 30px;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+    .can-vote-title{
+        font-size: 20px;
+    }
+}
