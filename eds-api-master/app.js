@@ -1,0 +1,43 @@
+const Koa = require('koa')
+const Router = require('koa-router')
+const bodyParser = require('koa-bodyparser')
+const cors = require('@koa/cors')
+
+const stateRouter = require('./router/state-router')
+const discrictRouter = require('./router/district-router')
+const townshipRouter = require('./router/township-router')
+const townRouter = require('./router/town-router')
+const wardsRouter = require('./router/wards-router')
+const villagetractsRouter = require('./router/villagetracts-router')
+const villageRouter = require('./router/village-router')
+const constituencyRouter = require('./router/constituency-router')
+const partyRouter = require('./router/party-router')
+const pcRouter = require('./router/pc-router')
+const officeRouter = require('./router/office-router')
+const candidateRouter = require('./router/candidate-router')
+const voterRouter = require('./router/voter-router')
+const userRouter = require('./router/user-router')
+
+const app = new Koa()
+const router = new Router()
+
+app.use(cors());
+app.use(bodyParser());
+app.use(stateRouter.routes()).use(router.allowedMethods())
+app.use(discrictRouter.routes()).use(router.allowedMethods())
+app.use(townshipRouter.routes()).use(router.allowedMethods())
+app.use(townRouter.routes()).use(router.allowedMethods())
+app.use(wardsRouter.routes()).use(router.allowedMethods())
+app.use(villagetractsRouter.routes()).use(router.allowedMethods())
+app.use(villageRouter.routes()).use(router.allowedMethods())
+app.use(constituencyRouter.routes()).use(router.allowedMethods())
+app.use(partyRouter.routes()).use(router.allowedMethods())
+app.use(pcRouter.routes()).use(router.allowedMethods())
+app.use(officeRouter.routes()).use(router.allowedMethods())
+app.use(candidateRouter.routes()).use(router.allowedMethods())
+app.use(voterRouter.routes()).use(router.allowedMethods())
+app.use(userRouter.routes()).use(router.allowedMethods())
+
+app.listen(5000, () => {
+    console.log("Server is running at 5000.")
+})
